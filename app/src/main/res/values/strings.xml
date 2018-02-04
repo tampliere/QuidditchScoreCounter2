@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quidditch Score Counter</string>
+    <string name="content_description">teams in Hogwarts</string>
+    <string name="scoreZero">0</string>
+    <string name="buttonText1">Goal</string>
+    <string name="buttonText2">Snitch !</string>
+    <string name="buttonText3">Reset</string>
+    <string name="title">MyAct</string>
+    <string name="emptyTillWin"> </string>
+    <string name="won">"Won!"</string>
+    <string name="score_gryffindor">"scoreGryffindor"</string>
+    <string name="score_slytherin">scoreSlytherin</string>
+</resources>

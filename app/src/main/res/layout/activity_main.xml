@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/paddingMarginSmall"
+            android:layout_marginRight="@dimen/paddingMarginSmall"
+            android:layout_marginTop="@dimen/paddingMarginSmall"
+            android:background="@drawable/quidditch"
+            android:contentDescription="@string/content_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/imageHeight"
+                android:layout_margin="@dimen/paddingMarginMedium"
+                android:layout_weight="1"
+                android:background="@drawable/gryffindor"
+                android:contentDescription="@string/content_description"
+                android:gravity="center"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/imageHeight"
+                android:layout_margin="@dimen/paddingMarginMedium"
+                android:layout_weight="1"
+                android:background="@drawable/slytherin"
+                android:contentDescription="@string/content_description"
+                android:gravity="center"
+                android:scaleType="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gryffindor_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/scoreZero"
+                    android:textColor="@color/gryffindorColor"
+                    android:textSize="@dimen/textSizeLarge" />
+
+                <Button
+                    android:id="@+id/goal_gryffindor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingMarginSmall"
+                    android:layout_marginLeft="@dimen/paddingMarginMedium"
+                    android:layout_marginRight="@dimen/paddingMarginMedium"
+                    android:background="@color/gryffindorColor"
+                    android:text="@string/buttonText1"
+                    android:textColor="@android:color/white"
+                    />
+
+                <Button
+                    android:id="@+id/snitch_gryffindor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingMarginSmall"
+                    android:layout_marginLeft="@dimen/paddingMarginMedium"
+                    android:layout_marginRight="@dimen/paddingMarginMedium"
+                    android:background="@color/gryffindorColor"
+                    android:text="@string/buttonText2"
+                    android:textColor="@color/whiteColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/heightSmall"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/greyColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/slytherin_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/scoreZero"
+                    android:textColor="@color/slytherinColor"
+                    android:textSize="@dimen/textSizeLarge" />
+
+                <Button
+                    android:id="@+id/goal_slytherin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingMarginSmall"
+                    android:layout_marginLeft="@dimen/paddingMarginMedium"
+                    android:layout_marginRight="@dimen/paddingMarginMedium"
+                    android:background="@color/slytherinColor"
+                    android:text="@string/buttonText1"
+                    android:textColor="@color/whiteColor"
+                    />
+
+                <Button
+                    android:id="@+id/snitch_slytherin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingMarginSmall"
+                    android:layout_marginLeft="@dimen/paddingMarginMedium"
+                    android:layout_marginRight="@dimen/paddingMarginMedium"
+                    android:background="@color/slytherinColor"
+                    android:text="@string/buttonText2"
+                    android:textColor="@color/whiteColor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/paddingMarginExtraLarge"
+            android:background="@color/greyColor"
+            android:text="@string/buttonText3"
+            android:textColor="@color/whiteColor" />
+
+    </LinearLayout>
+
+</ScrollView>
